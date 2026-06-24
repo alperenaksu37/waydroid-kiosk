@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Waydroid Kiosk
+Comment=Start Waydroid inside Cage after login
+Exec=cage -- /usr/local/bin/waydroid-launcher.sh
+Type=Application
+DesktopName=Waydroid-Kiosk

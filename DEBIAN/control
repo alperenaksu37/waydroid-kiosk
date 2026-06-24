@@ -1,0 +1,9 @@
+Package: waydroid-kiosk
+Version: 1.0
+Architecture: all
+Maintainer: Alperen Aksu <alperenaksu6024@gmail.com>
+Depends: cage, waydroid, zenity | kdialog
+Homepage: https://github.com/alperenaksu37/waydroid-kiosk
+Section: utils
+Priority: optional
+Description: Waydroid kiosk mode for Cage with prompt as login session
