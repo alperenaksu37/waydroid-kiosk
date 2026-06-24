@@ -1,2 +1,2 @@
-# waydroid-kiosk
+# Waydroid Kiosk
 Waydroid kiosk mode for Cage with prompt as login session
