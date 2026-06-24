@@ -1,8 +1,13 @@
 # Waydroid Kiosk
 Waydroid kiosk mode for Cage with prompt as login session
 
+## Features
+- **Waydroid in full screen:** You can run it like it's native because it uses Cage which is a Wayland compositor for full screen kiosk. For people who don't know, Waydroid is a tool for running Android in Wayland without emulation.
+- **Confirmation dialog:** It shows a confirmation dialog before booting Waydroid. If you forget your setting on "Waydroid Kiosk" option, you can select "No" and it returns to login screen.
+
 ## How to build
-You don't need to build it if you're using Debian-based or Arch-based distro, because I compiled it for them. But if you want, you can.
+You don't need to build it if you're using Debian-based or Arch-based distro, because I compiled it for them. But *if you want, you can*.
+
 - Copy the repository with git:
   ```bash
   git clone https://github.com/alperenaksu37/waydroid-kiosk
@@ -36,4 +41,4 @@ You don't need to build it if you're using Debian-based or Arch-based distro, be
   ```bash
   makepkg -si
   ```
-  This command will automatically install the package.
+  This command **will automatically install** the package.
