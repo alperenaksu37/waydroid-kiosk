@@ -4,14 +4,14 @@ Waydroid kiosk mode for Cage with prompt as login session
 ## How to build
 Copy the repository with git:
 ```bash
-git clone github.com/alperenaksu37/waydroid-kiosk
+git clone https://github.com/alperenaksu37/waydroid-kiosk
 ```
 If you're using Arch Linux, `git` may not be installed. If you have gotten `command not found` error, install it with `sudo pacman -S git`.
 
 ### For Debian
 - Remove `.git` directory:
   ```bash
-  rm -r waydroid-kiosk/.git
+  rm -r waydroid-kiosk/.git/
   ```
 - Set the owner of directory (recursively) to root:
   ```bash
