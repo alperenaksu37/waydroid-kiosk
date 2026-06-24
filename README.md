@@ -9,6 +9,10 @@ git clone github.com/alperenaksu37/waydroid-kiosk
 If you're using Arch Linux, `git` may not be installed. If you have gotten `command not found` error, install it with `sudo pacman -S git`.
 
 ### For Debian
+- Remove `.git` directory:
+  ```bash
+  rm -r waydroid-kiosk/.git
+  ```
 - Set the owner of directory (recursively) to root:
   ```bash
   sudo chown -R root:root waydroid-kiosk/
