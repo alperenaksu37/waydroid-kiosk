@@ -9,7 +9,7 @@ license=('Unlicense')
 depends=('cage' 'waydroid' 'zenity')
 
 package() {
-    install -Dm755 "${srcdir}/usr/local/bin/waydroid-launcher.sh" "${pkgdir}/usr/local/bin/waydroid-launcher.sh"
+    install -Dm755 "${srcdir}/usr/local/bin/waydroid-kiosk.sh" "${pkgdir}/usr/local/bin/waydroid-kiosk.sh"
     install -Dm644 "${srcdir}/usr/share/wayland-sessions/waydroid-kiosk.desktop" "${pkgdir}/usr/share/wayland-sessions/waydroid-kiosk.desktop"
     install -Dm644 "${srcdir}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
