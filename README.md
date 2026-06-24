@@ -2,6 +2,7 @@
 Waydroid kiosk mode for Cage with prompt as login session
 
 ## How to build
+You don't need to build it if you're using Debian-based or Arch-based distro, because I compiled it for them. But if you want, you can.
 - Copy the repository with git:
   ```bash
   git clone https://github.com/alperenaksu37/waydroid-kiosk
