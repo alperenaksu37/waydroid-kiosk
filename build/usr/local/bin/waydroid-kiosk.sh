@@ -10,6 +10,7 @@ else
 fi
 if [ "$ANSWER" == "yes" ]; then
     waydroid show-full-ui
+    waydroid session stop
 else
     exit 1
 fi
