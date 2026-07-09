@@ -6,43 +6,52 @@ Waydroid kiosk mode for Cage with prompt as login session
 - **Confirmation dialog:** It shows a confirmation dialog before booting Waydroid. If you forget your setting on "Waydroid Kiosk" option, you can select "No" and it returns to login screen.
 
 ## How to escape from session
-I can't add an option for auto closing because Waydroid doesn't stop when you shut down the system by quick settings. And Cage doesn't allow escaping because it is written for kiosk mode. The only escaping way is shutting down computer with power button. I'm sorry for this issue.
+### On v2.0 and newer
+If your Android version is Android 12 or newer, you can escape easily without powering off your computer!
+1. Open quick settings on Android session
+2. Select power button and "Power off" option on power menu
+3. Wait for powering off Android
+4. Select "Exit" on runner menu
 
-And don't forget to select your old desktop environment!
+### On 1.0
+You can't escape without powering off your computer because Cage is written for kiosk devices.
+1. Power off Android session by quick settings (optional if you want to prevent data loss)
+2. Press power off button on your machine
+3. After powering on, don't forget to select your desktop environment!
 
 ## How to build
 You don't need to build it if you're using Debian-based or Arch-based distro, because I compiled it for them. But *if you want, you can*.
 
-- Copy the repository with git:
+1. Copy the repository with git:
   ```bash
   git clone https://github.com/alperenaksu37/waydroid-kiosk
   ```
   If you're using Arch Linux, `git` may not be installed. If you have gotten `command not found` error, install it with `sudo pacman -S git`.
-- Go to directory:
+2. Go to directory:
   ```bash
   cd waydroid-kiosk/
   ```
   
 ### For Debian
-- Set the owner of directory (recursively) to root:
+3. Set the owner of directory (recursively) to root:
   ```bash
   sudo chown -R root:root src/
   ```
-- Compile it by `dpkg-deb` (no package installation required):
+4. Compile it by `dpkg-deb` (no package installation required):
   ```bash
   dpkg-deb --build src/ waydroid-kiosk_1.0_all.deb
   ```
-- Install it:
+5. Install it:
   ```bash
   sudo apt-get install waydroid-kiosk_1.0_all.deb
   ```
 
 ### For Arch Linux
-- Check the `base-devel` package:
+3. Check the `base-devel` package:
   ```bash
   sudo pacman -S --needed base-devel
   ```
-- Start building:
+4. Start building:
   ```bash
   makepkg -si
   ```
