@@ -1,5 +1,5 @@
 Package: waydroid-kiosk
-Version: 1.0
+Version: 2.0
 Architecture: all
 Maintainer: Alperen Aksu <alperenaksu6024@gmail.com>
 Depends: cage, waydroid, python3-tk
