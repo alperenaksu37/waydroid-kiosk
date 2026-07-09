@@ -39,11 +39,11 @@ You don't need to build it if you're using Debian-based or Arch-based distro, be
   ```
 4. Compile it by `dpkg-deb` (no package installation required):
   ```bash
-  dpkg-deb --build src/ waydroid-kiosk_1.0_all.deb
+  dpkg-deb --build src/ waydroid-kiosk_2.0_all.deb
   ```
 5. Install it:
   ```bash
-  sudo apt-get install waydroid-kiosk_1.0_all.deb
+  sudo apt-get install waydroid-kiosk_2.0_all.deb
   ```
 
 ### For Arch Linux
