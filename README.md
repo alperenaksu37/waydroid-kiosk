@@ -27,6 +27,7 @@ You don't need to build it if you're using Debian-based or Arch-based distro, be
   git clone https://github.com/alperenaksu37/waydroid-kiosk
   ```
   If you're using Arch Linux, `git` may not be installed. If you have gotten `command not found` error, install it with `sudo pacman -S git`.
+
 2. Go to directory:
   ```bash
   cd waydroid-kiosk/
